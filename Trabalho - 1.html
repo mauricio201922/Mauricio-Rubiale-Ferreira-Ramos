@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho - 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-image: url('gif de fundo/imagenes-gif-con-movimiento-de-tecnologia-9.gif'); 
+			background-repeat: 
+			no-repeat; 
+			background-size: 1450px 800px;
+		}
+		table{
+			border-color: white;
+		}
+	</style>
+	<script type="text/javascript">
+			
+		function calculo(){
+			var valor1=Number(document.getElementById("val1").value);
+			var valor2=Number(document.getElementById("val2").value);
+			var valor3=Number(document.getElementById("val3").value);
+			var valor4=Number(document.getElementById("val4").value);
+			var valor5=Number(document.getElementById("val5").value);
+			var valor6=Number(document.getElementById("val6").value);
+			var valor7=Number(document.getElementById("val7").value);
+
+			var soma1=(valor1+valor2+valor3+valor4+valor5+valor6+valor7);
+
+			var x1=Number(document.getElementById("x1").value);
+			var x2=Number(document.getElementById("x2").value);
+			var x3=Number(document.getElementById("x3").value);
+			var x4=Number(document.getElementById("x4").value);
+			var x5=Number(document.getElementById("x5").value);
+			var x6=Number(document.getElementById("x6").value);
+			var x7=Number(document.getElementById("x7").value);
+
+			var soma2=(x1+x2+x3+x4+x5+x6+x7);
+
+			document.getElementById("soma1").value = soma1;
+			document.getElementById("soma2").value = soma2;
+			
+			document.getElementById("xx1").value = x1*x1;
+			document.getElementById("xx2").value = x2*x2;
+			document.getElementById("xx3").value = x3*x3;
+			document.getElementById("xx4").value = x4*x4;
+			document.getElementById("xx5").value = x5*x5;
+			document.getElementById("xx6").value = x6*x6;
+			document.getElementById("xx7").value = x7*x7;
+
+			var soma3=(x1*x1)+(x2*x2)+(x3*x3)+(x4*x4)+(x5*x5)+(x6*x6)+(x7*x7)
+
+			document.getElementById("soma3").value = soma3;
+
+			document.getElementById("xy1").value = x1*valor1;
+			document.getElementById("xy2").value = x2*valor2;
+			document.getElementById("xy3").value = x3*valor3;
+			document.getElementById("xy4").value = x4*valor4;
+			document.getElementById("xy5").value = x5*valor5;
+			document.getElementById("xy6").value = x6*valor6;
+			document.getElementById("xy7").value = x7*valor7;
+
+			var soma4=(x1*valor1)+(x2*valor2)+(x3*valor3)+(x4*valor4)+(x5*valor5)+(x6*valor6)+(x7*valor7)
+
+			document.getElementById("soma4").value = soma4;
+
+			var y=(soma1*(-3));
+			var a=(7*(-3));
+			var b=(soma2*(-3));
+
+			var x=(y+soma4);
+			var x2=(b+soma3);
+
+			var soma5=x/x2;
+
+			document.getElementById("soma5").value = soma5;
+
+			var valor_b=soma2*soma5;
+			var soma6=(soma1-valor_b)/7;
+
+			document.getElementById("soma6").value = soma6;
+
+			var soma7=soma6+(soma5*7);
+
+			document.getElementById("soma7").value = soma7;
+		}
+
+	</script>
+</head>
+<body>
+	<form name="calcular">
+		<table border="1">
+			<tr>
+				<th style="background-color: #36FAD8;">Meses</th>
+				<th style="background-color: #36FAD8;">Demandas()</th>
+				<th style="background-color: #36FAD8;">x</th>
+				<th style="background-color: #36FAD8;">x^2</th>
+				<th style="background-color: #36FAD8;">xy</th>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">1</td>
+				<td><input type="text" name="valor" id="val1"></td>
+				<td><input type="text" name="x" id="x1"></td>
+				<td><input type="text" name="x*x" id="xx1" disabled></td>
+				<td><input type="text" name="xy" id="xy1" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">2</td>
+				<td><input type="text" name="valor" id="val2"></td>
+				<td><input type="text" name="x" id="x2"></td>
+				<td><input type="text" name="x*x" id="xx2" disabled></td>
+				<td><input type="text" name="xy" id="xy2" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">3</td>
+				<td><input type="text" name="valor" id="val3"></td>
+				<td><input type="text" name="x" id="x3"></td>
+				<td><input type="text" name="x*x" id="xx3" disabled></td>
+				<td><input type="text" name="xy" id="xy3" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">4</td>
+				<td><input type="text" name="valor" id="val4"></td>
+				<td><input type="text" name="x" id="x4"></td>
+				<td><input type="text" name="x*x" id="xx4" disabled></td>
+				<td><input type="text" name="xy" id="xy4" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">5</td>
+				<td><input type="text" name="valor" id="val5"></td>
+				<td><input type="text" name="x" id="x5"></td>
+				<td><input type="text" name="x*x" id="xx5" disabled></td>
+				<td><input type="text" name="xy" id="xy5" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">6</td>
+				<td><input type="text" name="valor" id="val6"></td>
+				<td><input type="text" name="x" id="x6"></td>
+				<td><input type="text" name="x*x" id="xx6" disabled></td>
+				<td><input type="text" name="xy" id="xy6" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61; text-align: center;">7</td>
+				<td><input type="text" name="valor" id="val7"></td>
+				<td><input type="text" name="x" id="x7"></td>
+				<td><input type="text" name="x*x" id="xx7" disabled></td>
+				<td><input type="text" name="xy" id="xy7" disabled></td>
+			</tr>
+			<tr>
+				<td style="background-color: #65FA61;">Total somado</td>
+				<td><input type="text" name="soma1" id="soma1" disabled></td>
+				<td><input type="text" name="soma2" id="soma2" disabled></td>
+				<td><input type="text" name="soma3" id="soma3" disabled></td>
+				<td><input type="text" name="soma4" id="soma4" disabled></td>
+			</tr>
+		</table>
+
+		<br/>
+
+		<table border="1">
+			<tr>
+				<th style="background-color: #DCDCDC;">a</th>
+				<th style="background-color: #DCDCDC;">b</th>
+				<th style="background-color: #DCDCDC;">Previsão(Agosto)</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="soma6" id="soma6" disabled></td>
+				<td><input type="text" name="soma5" id="soma5" disabled></td>
+				<td><input type="text" name="soma7" id="soma7" disabled></td>
+			</tr>
+		</table><br/><br/>
+		<input type="button" name="submit" value="Enviar" onclick="calculo();">
+	</form>
+</body>
+</html>
